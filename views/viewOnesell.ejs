@@ -1,0 +1,152 @@
+
+ <!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	
+
+	
+
+	<!-- Favicon -->
+
+	<!-- Styles -->
+    <!-- <link rel="stylesheet" href="/stylesheets/split.css"> -->
+    <link rel="stylesheet" href="/animate.css">
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="/stylesheets/icomoon.css">
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="/stylesheets/bootstrap.css">
+
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="/stylesheets/magnific-popup.css">
+
+    <!-- Owl Carousel  -->
+    <link rel="stylesheet" href="/stylesheets/owl.carousel.min.css">
+    <link rel="stylesheet" href="/stylesheets/owl.theme.default.min.css">
+
+    <!-- Theme style  -->
+    <link rel="stylesheet" href="/stylesheets/style.css">
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+
+</head>
+
+
+<body background="/images/bookregiter.png">
+  <nav class="gtco-nav" role="navigation">
+    <div class="gtco-container">
+        <div class="row">
+            <div class="col-xs-2">
+                <div id="gtco-logo"><img src="/images/logo.png" width="80"><a href="/">Pregnancy helper</a></div>
+            </div>
+            <div class="col-xs-10 text-right menu-1">
+                <ul>
+                    <li class="has-dropdown">
+                        <a href="/home">Home</a>
+
+                    </li>
+                    <li class="has-dropdown">
+                        <a href="/storyview">Stories</a>
+
+                    </li>
+
+                    <li class="has-dropdown">
+                        <a href="/story">Share stories </a>
+
+                    </li>
+                    
+                    <li><a href="/info">Monthly info</a></li>
+                    <li><a href="/profile">Log Out</a></li>
+                    
+                </ul> <br>
+              
+                <!-- <form method='post' action="/searchexchange"> -->
+                    <!-- <input id="searchbar" type="text" name="name" placeholder="Search books for exchange">
+                </form> -->
+
+            </div>
+        </div>
+
+    </div>
+</nav>
+
+<div class="fs-split">
+
+	<!-- Image Side -->
+	<!-- <div class="split-image">
+        <img src="/uploads/<%= Sell.imagename %>" alt="image">
+	</div> -->
+
+	<!-- Content Side -->
+	<!-- <div class="split-content">
+
+		<div class="split-content-vertically-center">
+		
+			<div class="split-intro">
+				
+				
+
+				<span class="tagline"><%= Sell.name %></span>
+                <h1>Author:<%= Sell.author %></h1>
+                <h1>Genre:<%= Sell.genre %></h1>
+                <h1>Price:<%= Sell.price %></h1>
+
+			</div>
+
+			<div class="split-bio">
+				
+				<p><%= Sell.description %> </p>
+
+			</div>
+
+			
+
+			
+
+		</div>
+
+	</div>
+
+</div> -->
+<div class="split left">
+    <div class="centered">
+        <img src="/uploads/<%= Sell.imagename %>" alt="image">
+
+    </div>
+</div>
+
+<div class="split right">
+    <div class="centered">
+      <br><br><br><br><br><br><br><br><br>
+      <div class="forTitle">
+     
+        <div class="forTitle">
+         
+        </div>
+        <h4>Name: <%= Sell.username %></h4>
+        <h4>Email: <%= Sell.useremail %></h4>
+        <h4> Story: <%= Sell.description %></h4>
+       
+
+
+
+
+    </div>
+    
+</div>
+<script>
+  function openForm() {
+    document.getElementById("myForm").style.display = "block";
+  }
+  
+  function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+  }
+  </script>
+  
+
+</body>
+
+</html>
